@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio — Your Name</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+JP:wght@300;400;500;700&family=DM+Mono:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet" />
+
+  <!-- Google Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet" />
+  
+  <!-- css -->
+  <link href="/style.css/" rel="stylesheet" />
+
+  <!-- defer -->
+  <script defer src="/script.js"></script>
+
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <!-- ★ ロゴ／イニシャルを変更してください -->
+    <div class="nav-logo">YN</div>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#works">Works</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-left">
+      <div class="hero-tag">
+        <span class="material-icons-round">fiber_manual_record</span>
+        <!-- ★ 職種タグを変更してください -->
+        Available for new opportunities
+      </div>
+
+      <!-- ★ 名前を変更してください -->
+      <h1>YOUR<br /><span>NAME.</span></h1>
+
+      <!-- ★ キャッチコピーを変更してください -->
+      <p class="hero-desc">
+        ユーザー体験を中心に、美しくて動くWebを作るデザイン×エンジニア。<br />
+        課題解決とクラフトへの情熱を持って、次のステップへ。
+      </p>
+
+      <a href="#works" class="hero-cta">
+        <span class="material-icons-round">arrow_downward</span>
+        View My Work
+      </a>
+    </div>
+
+    <!-- ★ 実績数字を変更してください -->
+    <div class="hero-right">
+      <div class="stat-card">
+        <div class="stat-num">3+</div>
+        <div class="stat-label">Years Exp.</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">12</div>
+        <div class="stat-label">Projects</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">8</div>
+        <div class="stat-label">Clients</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-header reveal">
+      <span class="section-num">// 01</span>
+      <h2 class="section-title">ABOUT <em>ME</em></h2>
+      <div class="divider"></div>
+    </div>
+
+    <div class="about-grid">
+      <!-- ★ 自己紹介文を変更してください -->
+      <div class="about-text reveal reveal-delay-1">
+        <p>はじめまして。<strong>Your Name</strong> です。フロントエンドとデザインの両方を扱えるエンジニア／デザイナーとして、約3年間Webサービスの開発・改善に携わってきました。</p>
+        <p><strong>ユーザー視点</strong>を軸にしたUI設計と、パフォーマンスを意識したコーディングが強みです。Figmaで設計したものを自分でコードに落とし込むことで、デザインと実装のギャップを最小化できます。</p>
+        <p>現在は新しいチャレンジを求めており、<strong>プロダクト志向の強い環境</strong>でのお仕事を探しています。</p>
+      </div>
+
+      <!-- ★ スキルと習熟度を変更してください -->
+      <div class="skills-list reveal reveal-delay-2">
+        <div class="skill-item">
+          <div class="skill-head"><span class="skill-name">HTML / CSS</span><span class="skill-pct">95%</span></div>
+          <div class="skill-bar"><div class="skill-bar-fill" data-width="0.95"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-head"><span class="skill-name">JavaScript / TypeScript</span><span class="skill-pct">85%</span></div>
+          <div class="skill-bar"><div class="skill-bar-fill" data-width="0.85"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-head"><span class="skill-name">React / Next.js</span><span class="skill-pct">80%</span></div>
+          <div class="skill-bar"><div class="skill-bar-fill" data-width="0.80"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-head"><span class="skill-name">Figma / UI Design</span><span class="skill-pct">90%</span></div>
+          <div class="skill-bar"><div class="skill-bar-fill" data-width="0.90"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-head"><span class="skill-name">Node.js / REST API</span><span class="skill-pct">70%</span></div>
+          <div class="skill-bar"><div class="skill-bar-fill" data-width="0.70"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-head"><span class="skill-name">Git / CI/CD</span><span class="skill-pct">75%</span></div>
+          <div class="skill-bar"><div class="skill-bar-fill" data-width="0.75"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORKS -->
+  <section id="works">
+    <div class="section-header reveal">
+      <span class="section-num">// 02</span>
+      <h2 class="section-title">SELECT<em>ED</em><br />WORKS</h2>
+      <div class="divider"></div>
+    </div>
+
+    <div class="works-grid">
+
+      <!-- ★ 作品1（フィーチャード：2カラム幅） -->
+      <div class="work-card featured reveal">
+        <div class="work-thumb">
+          <!-- ★ <img src="works/project1.jpg" alt="Project Title" /> -->
+          <span class="work-thumb-icon material-icons-round">web</span>
+        </div>
+        <div class="work-tags">
+          <span class="work-tag">Web Design</span>
+          <span class="work-tag">React</span>
+          <span class="work-tag">Next.js</span>
+        </div>
+        <!-- ★ タイトル・説明・リンクを変更してください -->
+        <div class="work-title">Project Alpha</div>
+        <p class="work-desc">ECサイトのフルリニューアルを担当。ユーザーテスト・IA設計から実装まで一貫して対応。CVR+18%を達成。</p>
+        <a href="#" class="work-link">View Project <span class="material-icons-round">arrow_forward</span></a>
+      </div>
+
+      <!-- ★ 作品2 -->
+      <div class="work-card reveal reveal-delay-1">
+        <div class="work-thumb">
+          <!-- ★ <img src="works/project2.jpg" alt="..." /> -->
+          <span class="work-thumb-icon material-icons-round">smartphone</span>
+        </div>
+        <div class="work-tags">
+          <span class="work-tag">UI/UX</span>
+          <span class="work-tag">Figma</span>
+        </div>
+        <div class="work-title">Project Beta</div>
+        <p class="work-desc">モバイルアプリのUIリデザイン。コンポーネントシステムを構築し、開発速度を向上。</p>
+        <a href="#" class="work-link">View Project <span class="material-icons-round">arrow_forward</span></a>
+      </div>
+
+      <!-- ★ 作品3 -->
+      <div class="work-card reveal reveal-delay-2">
+        <div class="work-thumb">
+          <!-- ★ <img src="works/project3.jpg" alt="..." /> -->
+          <span class="work-thumb-icon material-icons-round">bar_chart</span>
+        </div>
+        <div class="work-tags">
+          <span class="work-tag">Dashboard</span>
+          <span class="work-tag">D3.js</span>
+        </div>
+        <div class="work-title">Project Gamma</div>
+        <p class="work-desc">分析ダッシュボードの新規開発。複雑なデータをインタラクティブなビジュアルに落とし込んだ。</p>
+        <a href="#" class="work-link">View Project <span class="material-icons-round">arrow_forward</span></a>
+      </div>
+
+      <!-- ★ 作品4 -->
+      <div class="work-card reveal reveal-delay-3">
+        <div class="work-thumb">
+          <!-- ★ <img src="works/project4.jpg" alt="..." /> -->
+          <span class="work-thumb-icon material-icons-round">campaign</span>
+        </div>
+        <div class="work-tags">
+          <span class="work-tag">LP</span>
+          <span class="work-tag">Animation</span>
+        </div>
+        <div class="work-title">Project Delta</div>
+        <p class="work-desc">キャンペーンLPのデザイン＆実装。スクロールアニメーションで離脱率を大幅に改善。</p>
+        <a href="#" class="work-link">View Project <span class="material-icons-round">arrow_forward</span></a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="section-header reveal">
+      <span class="section-num">// 03</span>
+      <h2 class="section-title">GET IN<br /><em>TOUCH</em></h2>
+      <div class="divider"></div>
+    </div>
+
+    <div class="contact-inner reveal reveal-delay-1">
+      <!-- ★ 連絡文を変更してください -->
+      <p>現在、新しい仕事の機会を積極的に探しています。<br />ご興味を持っていただけましたら、お気軽にご連絡ください。</p>
+      <div class="contact-links">
+        <!-- ★ 各リンクを変更してください -->
+        <a href="mailto:your@email.com" class="contact-btn">
+          <span class="material-icons-round">mail</span>your@email.com
+        </a>
+        <a href="https://github.com/yourhandle" target="_blank" class="contact-btn">
+          <span class="material-icons-round">code</span>GitHub
+        </a>
+        <a href="https://linkedin.com/in/yourhandle" target="_blank" class="contact-btn">
+          <span class="material-icons-round">person</span>LinkedIn
+        </a>
+        <a href="#" class="contact-btn">
+          <span class="material-icons-round">article</span>Resume / CV
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <!-- ★ 名前を変更してください -->
+    <div class="footer-copy">© 2025 Your Name. All rights reserved.</div>
+    <a href="#hero" class="footer-back">
+      <span class="material-icons-round">arrow_upward</span>Back to Top
+    </a>
+  </footer>
+
+</body>
+</html>
