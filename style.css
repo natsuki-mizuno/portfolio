@@ -277,6 +277,14 @@
        WORKS
     =========================== */
     #works { border-top: 1px solid var(--border); }
+    .works-note {
+      font-size: 16px;
+      color: #aaa;
+      margin-bottom: 40px;
+
+    }  
+    .works-note strong { color: var(--text); font-weight: 500; }
+
     .works-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -342,6 +350,8 @@
       text-transform: uppercase;
       color: var(--muted);
       transition: color 0.2s, gap 0.2s;
+      position: relative;
+      z-index: 10;
     }
     .work-link:hover { color: var(--accent); gap: 10px; }
     .work-link .material-icons-round { font-size: 14px; }
