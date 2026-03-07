@@ -214,6 +214,10 @@
       margin-top: 6px;
     }
 
+    .stat-card:nth-child(3)  .stat-num  {
+      font-size: 40px;
+
+    }
     /* ===========================
        SECTION COMMON
     =========================== */

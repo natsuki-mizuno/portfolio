@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio — Your Name</title>
+  <title>Portfolio — Natsuki Mizuno</title>
+  <meta name="description" content="フロントエンドエンジニア水野奈月のポートフォリオサイト。HTML・CSS・JavaScriptを用いたWebサイト制作やコーディング実績、スキル、制作物を紹介しています。">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -14,10 +15,10 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet" />
   
   <!-- css -->
-  <link href="/style.css/" rel="stylesheet" />
+  <link href="style.css" rel="stylesheet" />
 
   <!-- defer -->
-  <script defer src="/script.js"></script>
+  <script defer src="script.js"></script>
 
 </head>
 <body>
@@ -27,8 +28,7 @@
 
   <!-- NAV -->
   <nav id="nav">
-    <!-- ★ ロゴ／イニシャルを変更してください -->
-    <div class="nav-logo">YN</div>
+    <div class="nav-logo">NM</div>
     <div class="nav-links">
       <a href="#about">About</a>
       <a href="#works">Works</a>
@@ -41,17 +41,15 @@
     <div class="hero-left">
       <div class="hero-tag">
         <span class="material-icons-round">fiber_manual_record</span>
-        <!-- ★ 職種タグを変更してください -->
-        Available for new opportunities
+      Frontend Engineer • Available for new opportunities
       </div>
 
-      <!-- ★ 名前を変更してください -->
-      <h1>YOUR<br /><span>NAME.</span></h1>
+      <h1>NATSUKI<br /><span>MIZUNO.</span></h1>
 
-      <!-- ★ キャッチコピーを変更してください -->
       <p class="hero-desc">
-        ユーザー体験を中心に、美しくて動くWebを作るデザイン×エンジニア。<br />
-        課題解決とクラフトへの情熱を持って、次のステップへ。
+      HTML / CSS / JavaScript / WordPress を中心に<br>
+      UI実装とユーザー体験を重視したWebサイトを構築する <br> 
+      フロントエンドエンジニア。
       </p>
 
       <a href="#works" class="hero-cta">
@@ -60,68 +58,107 @@
       </a>
     </div>
 
-    <!-- ★ 実績数字を変更してください -->
     <div class="hero-right">
       <div class="stat-card">
         <div class="stat-num">3+</div>
-        <div class="stat-label">Years Exp.</div>
+        <div class="stat-label">Years Experience</div>
       </div>
+
       <div class="stat-card">
-        <div class="stat-num">12</div>
-        <div class="stat-label">Projects</div>
+        <div class="stat-num">100+</div>
+        <div class="stat-label">Web Pages Implemented</div>
       </div>
+
       <div class="stat-card">
-        <div class="stat-num">8</div>
-        <div class="stat-label">Clients</div>
+        <div class="stat-num">WordPress</div>
+        <div class="stat-label">Production Experience</div>
       </div>
     </div>
   </section>
 
   <!-- ABOUT -->
-  <section id="about">
-    <div class="section-header reveal">
-      <span class="section-num">// 01</span>
-      <h2 class="section-title">ABOUT <em>ME</em></h2>
-      <div class="divider"></div>
+<section id="about">
+  <div class="section-header reveal">
+    <span class="section-num">// 01</span>
+    <h2 class="section-title">ABOUT <em>ME</em></h2>
+    <div class="divider"></div>
+  </div>
+
+  <div class="about-grid">
+
+    <div class="about-text reveal reveal-delay-1">
+      <p>はじめまして。<strong>水野 奈月（Natsuki Mizuno）</strong>です。Web制作会社でフロントエンド実装を中心に、Webサイトの構築・改修・運用に携わっています。</p>
+
+      <p>HTML / CSS を中心とした<strong>高品質なマークアップ</strong>と、デザインを正確に再現する実装を得意としています。WordPress案件や既存サイトの改修など、実務の中で多くのプロジェクトに関わってきました。</p>
+
+      <p>現在は<strong>JavaScriptやモダンフロントエンド技術</strong>の習得にも力を入れており、よりユーザー体験の高いWebを作れるエンジニアになることを目標にしています。</p>
     </div>
 
-    <div class="about-grid">
-      <!-- ★ 自己紹介文を変更してください -->
-      <div class="about-text reveal reveal-delay-1">
-        <p>はじめまして。<strong>Your Name</strong> です。フロントエンドとデザインの両方を扱えるエンジニア／デザイナーとして、約3年間Webサービスの開発・改善に携わってきました。</p>
-        <p><strong>ユーザー視点</strong>を軸にしたUI設計と、パフォーマンスを意識したコーディングが強みです。Figmaで設計したものを自分でコードに落とし込むことで、デザインと実装のギャップを最小化できます。</p>
-        <p>現在は新しいチャレンジを求めており、<strong>プロダクト志向の強い環境</strong>でのお仕事を探しています。</p>
-      </div>
+    <div class="skills-list reveal reveal-delay-2">
 
-      <!-- ★ スキルと習熟度を変更してください -->
-      <div class="skills-list reveal reveal-delay-2">
-        <div class="skill-item">
-          <div class="skill-head"><span class="skill-name">HTML / CSS</span><span class="skill-pct">95%</span></div>
-          <div class="skill-bar"><div class="skill-bar-fill" data-width="0.95"></div></div>
-        </div>
-        <div class="skill-item">
-          <div class="skill-head"><span class="skill-name">JavaScript / TypeScript</span><span class="skill-pct">85%</span></div>
-          <div class="skill-bar"><div class="skill-bar-fill" data-width="0.85"></div></div>
-        </div>
-        <div class="skill-item">
-          <div class="skill-head"><span class="skill-name">React / Next.js</span><span class="skill-pct">80%</span></div>
-          <div class="skill-bar"><div class="skill-bar-fill" data-width="0.80"></div></div>
-        </div>
-        <div class="skill-item">
-          <div class="skill-head"><span class="skill-name">Figma / UI Design</span><span class="skill-pct">90%</span></div>
-          <div class="skill-bar"><div class="skill-bar-fill" data-width="0.90"></div></div>
-        </div>
-        <div class="skill-item">
-          <div class="skill-head"><span class="skill-name">Node.js / REST API</span><span class="skill-pct">70%</span></div>
-          <div class="skill-bar"><div class="skill-bar-fill" data-width="0.70"></div></div>
-        </div>
-        <div class="skill-item">
-          <div class="skill-head"><span class="skill-name">Git / CI/CD</span><span class="skill-pct">75%</span></div>
-          <div class="skill-bar"><div class="skill-bar-fill" data-width="0.75"></div></div>
-        </div>
-      </div>
+<div class="skill-item">
+  <div class="skill-head">
+    <span class="skill-name">HTML / CSS</span>
+    <span class="skill-pct">95%</span>
+  </div>
+  <div class="skill-bar">
+    <div class="skill-bar-fill" data-width="0.95"></div>
+  </div>
+</div>
+
+<div class="skill-item">
+  <div class="skill-head">
+    <span class="skill-name">SCSS</span>
+    <span class="skill-pct">90%</span>
+  </div>
+  <div class="skill-bar">
+    <div class="skill-bar-fill" data-width="0.90"></div>
+  </div>
+</div>
+
+<div class="skill-item">
+  <div class="skill-head">
+    <span class="skill-name">JavaScript</span>
+    <span class="skill-pct">70%</span>
+  </div>
+  <div class="skill-bar">
+    <div class="skill-bar-fill" data-width="0.70"></div>
+  </div>
+</div>
+
+<div class="skill-item">
+  <div class="skill-head">
+    <span class="skill-name">WordPress</span>
+    <span class="skill-pct">85%</span>
+  </div>
+  <div class="skill-bar">
+    <div class="skill-bar-fill" data-width="0.85"></div>
+  </div>
+</div>
+
+<div class="skill-item">
+  <div class="skill-head">
+    <span class="skill-name">Shopify</span>
+    <span class="skill-pct">70%</span>
+  </div>
+  <div class="skill-bar">
+    <div class="skill-bar-fill" data-width="0.70"></div>
+  </div>
+</div>
+
+<div class="skill-item">
+  <div class="skill-head">
+    <span class="skill-name">UI / Design Understanding</span>
+    <span class="skill-pct">80%</span>
+  </div>
+  <div class="skill-bar">
+    <div class="skill-bar-fill" data-width="0.80"></div>
+  </div>
+</div>
+
     </div>
-  </section>
+  </div>
+</section>
 
   <!-- WORKS -->
   <section id="works">
@@ -207,14 +244,12 @@
     </div>
 
     <div class="contact-inner reveal reveal-delay-1">
-      <!-- ★ 連絡文を変更してください -->
       <p>現在、新しい仕事の機会を積極的に探しています。<br />ご興味を持っていただけましたら、お気軽にご連絡ください。</p>
       <div class="contact-links">
-        <!-- ★ 各リンクを変更してください -->
-        <a href="mailto:your@email.com" class="contact-btn">
-          <span class="material-icons-round">mail</span>your@email.com
+        <a href="mailto:nmizuno1213@gmail.com" class="contact-btn">
+          <span class="material-icons-round">mail</span>nmizuno1213@gmail.com
         </a>
-        <a href="https://github.com/yourhandle" target="_blank" class="contact-btn">
+        <a href="https://github.com/natsuki-mizuno/" target="_blank" class="contact-btn">
           <span class="material-icons-round">code</span>GitHub
         </a>
         <a href="https://linkedin.com/in/yourhandle" target="_blank" class="contact-btn">
@@ -229,8 +264,7 @@
 
   <!-- FOOTER -->
   <footer>
-    <!-- ★ 名前を変更してください -->
-    <div class="footer-copy">© 2025 Your Name. All rights reserved.</div>
+    <div class="footer-copy">© 2025 Natsuki Mizuno. All rights reserved.</div>
     <a href="#hero" class="footer-back">
       <span class="material-icons-round">arrow_upward</span>Back to Top
     </a>
