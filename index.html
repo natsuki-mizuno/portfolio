@@ -1,31 +1,48 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio — Natsuki Mizuno</title>
-  <meta name="description" content="フロントエンドエンジニア水野奈月のポートフォリオサイト。HTML・CSS・JavaScriptを用いたWebサイト制作やコーディング実績、スキル、制作物を紹介しています。">
-  
+  <meta name="description"
+    content="フロントエンドエンジニア水野奈月のポートフォリオサイト。HTML・CSS・JavaScriptを用いたWebサイト制作やコーディング実績、スキル、制作物を紹介しています。">
+
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="favicons/favicon.ico" />
-<link rel="apple-touch-icon" sizes="180x180" href="favicons//apple-icon.png" />
-<link rel="icon" type="image/png" sizes="192x192" href="favicons//android-chrome-192x192.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="favicons//apple-icon.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="favicons//android-chrome-192x192.png" />
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+JP:wght@300;400;500;700&family=DM+Mono:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+JP:wght@300;400;500;700&family=DM+Mono:ital,wght@0,300;0,400;1,300&display=swap"
+    rel="stylesheet" />
 
   <!-- Google Material Icons -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet" />
-  
+
   <!-- css -->
-  <link href="style.css" rel="stylesheet" />
+  <link rel="preload" href="style.css" rel="stylesheet" />
 
   <!-- defer -->
   <script defer src="script.js"></script>
 
+  <script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "Person",
+ "name": "Natsuki Mizuno",
+ "jobTitle": "Frontend Engineer",
+ "url": "https://natsukimizuno.com",
+ "sameAs": [
+   "https://github.com/natsuki-mizuno"
+ ]
+}
+</script>
 </head>
+
 <body>
 
   <div class="cursor" id="cursor"></div>
@@ -46,15 +63,15 @@
     <div class="hero-left">
       <div class="hero-tag">
         <span class="material-icons-round">fiber_manual_record</span>
-      Frontend Engineer • Available for new opportunities
+        Frontend Engineer • Available for new opportunities
       </div>
 
       <h1>NATSUKI<br /><span>MIZUNO.</span></h1>
 
       <p class="hero-desc">
-      HTML / CSS / JavaScript / WordPress を中心に<br>
-      UI実装とユーザー体験を重視したWebサイトを構築する <br> 
-      フロントエンドエンジニア。
+        HTML / CSS / JavaScript / WordPress を中心に<br>
+        UI実装とユーザー体験を重視したWebサイトを構築する <br>
+        フロントエンドエンジニア。
       </p>
 
       <a href="#works" class="hero-cta">
@@ -82,293 +99,294 @@
   </section>
 
   <!-- ABOUT -->
-<section id="about">
-  <div class="section-header reveal">
-    <span class="section-num">// 01</span>
-    <h2 class="section-title">ABOUT <em>ME</em></h2>
-    <div class="divider"></div>
-  </div>
-
-  <div class="about-grid">
-
-    <div class="about-text reveal reveal-delay-1">
-      <p>はじめまして。<strong>水野 奈月（Natsuki Mizuno）</strong>です。Web制作会社でフロントエンド実装を中心に、Webサイトの構築・改修・運用に携わっています。</p>
-
-      <p>HTML / CSS を中心とした<strong>高品質なマークアップ</strong>と、デザインを正確に再現する実装を得意としています。WordPress案件や既存サイトの改修など、実務の中で多くのプロジェクトに関わってきました。</p>
-
-      <p>現在は<strong>JavaScriptやモダンフロントエンド技術</strong>の習得にも力を入れており、よりユーザー体験の高いWebを作れるエンジニアになることを目標にしています。</p>
+  <section id="about">
+    <div class="section-header reveal">
+      <span class="section-num">// 01</span>
+      <h2 class="section-title">ABOUT <em>ME</em></h2>
+      <div class="divider"></div>
     </div>
 
-    <div class="skills-list reveal reveal-delay-2">
+    <div class="about-grid">
 
-<div class="skill-item">
-  <div class="skill-head">
-    <span class="skill-name">HTML / CSS</span>
-    <span class="skill-pct">95%</span>
-  </div>
-  <div class="skill-bar">
-    <div class="skill-bar-fill" data-width="0.95"></div>
-  </div>
-</div>
+      <div class="about-text reveal reveal-delay-1">
+        <p>はじめまして。<strong>水野 奈月（Natsuki Mizuno）</strong>です。Web制作会社でフロントエンド実装を中心に、Webサイトの構築・改修・運用に携わっています。</p>
 
-<div class="skill-item">
-  <div class="skill-head">
-    <span class="skill-name">SCSS</span>
-    <span class="skill-pct">90%</span>
-  </div>
-  <div class="skill-bar">
-    <div class="skill-bar-fill" data-width="0.90"></div>
-  </div>
-</div>
+        <p>HTML / CSS
+          を中心とした<strong>高品質なマークアップ</strong>と、デザインを正確に再現する実装を得意としています。WordPress案件や既存サイトの改修など、実務の中で多くのプロジェクトに関わってきました。</p>
 
-<div class="skill-item">
-  <div class="skill-head">
-    <span class="skill-name">JavaScript</span>
-    <span class="skill-pct">70%</span>
-  </div>
-  <div class="skill-bar">
-    <div class="skill-bar-fill" data-width="0.70"></div>
-  </div>
-</div>
+        <p>現在は<strong>JavaScriptやモダンフロントエンド技術</strong>の習得にも力を入れており、よりユーザー体験の高いWebを作れるエンジニアになることを目標にしています。</p>
+      </div>
 
-<div class="skill-item">
-  <div class="skill-head">
-    <span class="skill-name">WordPress</span>
-    <span class="skill-pct">85%</span>
-  </div>
-  <div class="skill-bar">
-    <div class="skill-bar-fill" data-width="0.85"></div>
-  </div>
-</div>
+      <div class="skills-list reveal reveal-delay-2">
 
-<div class="skill-item">
-  <div class="skill-head">
-    <span class="skill-name">Shopify</span>
-    <span class="skill-pct">70%</span>
-  </div>
-  <div class="skill-bar">
-    <div class="skill-bar-fill" data-width="0.70"></div>
-  </div>
-</div>
+        <div class="skill-item">
+          <div class="skill-head">
+            <span class="skill-name">HTML / CSS</span>
+            <span class="skill-pct">95%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-bar-fill" data-width="0.95"></div>
+          </div>
+        </div>
 
-<div class="skill-item">
-  <div class="skill-head">
-    <span class="skill-name">UI / Design Understanding</span>
-    <span class="skill-pct">80%</span>
-  </div>
-  <div class="skill-bar">
-    <div class="skill-bar-fill" data-width="0.80"></div>
-  </div>
-</div>
+        <div class="skill-item">
+          <div class="skill-head">
+            <span class="skill-name">SCSS</span>
+            <span class="skill-pct">90%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-bar-fill" data-width="0.90"></div>
+          </div>
+        </div>
 
+        <div class="skill-item">
+          <div class="skill-head">
+            <span class="skill-name">JavaScript</span>
+            <span class="skill-pct">70%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-bar-fill" data-width="0.70"></div>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-head">
+            <span class="skill-name">WordPress</span>
+            <span class="skill-pct">85%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-bar-fill" data-width="0.85"></div>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-head">
+            <span class="skill-name">Shopify</span>
+            <span class="skill-pct">70%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-bar-fill" data-width="0.70"></div>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-head">
+            <span class="skill-name">UI / Design Understanding</span>
+            <span class="skill-pct">80%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-bar-fill" data-width="0.80"></div>
+          </div>
+        </div>
+
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
   <!-- WORKS -->
-<!-- WORKS -->
-<section id="works">
-  <div class="section-header reveal">
-    <span class="section-num">// 02</span>
-    <h2 class="section-title">SELECT<em>ED</em><br />WORKS</h2>
-    <div class="divider"></div>
-  </div>
-
-  <p class="works-note">
-    制作会社のプロジェクトチームの一員として担当した案件です。<br>
-    主に<strong>フロントエンド実装（HTML / SCSS / JavaScript）、アニメーション実装、
-    マークアップ設計、共通ファイルの環境構築</strong>などを担当しています。
-  </p>
-
- <div class="works-grid">
-
-
-    <!-- Project A -->
-    <div class="work-card featured reveal">
-      <div class="work-thumb">
-        <span class="work-thumb-icon material-icons-round">campaign</span>
-      </div>
-
-      <div class="work-tags">
-        <span class="work-tag">WordPress</span>
-        <span class="work-tag">LP</span>
-        <span class="work-tag">Front-end</span>
-        <span class="work-tag">Mark-up</span>
-        <span class="work-tag">Animation</span>
-      </div>
-
-      <div class="work-title">Project A</div>
-
-      <p class="work-desc">
-        採用ランディングページのフロントエンド実装を担当。
-      </p>
-
-      <a href="https://arte-industry.co.jp/recruit/" target="_blank" class="work-link">
-        Visit Site <span class="material-icons-round">arrow_forward</span>
-      </a>
+  <!-- WORKS -->
+  <section id="works">
+    <div class="section-header reveal">
+      <span class="section-num">// 02</span>
+      <h2 class="section-title">SELECT<em>ED</em><br />WORKS</h2>
+      <div class="divider"></div>
     </div>
 
+    <p class="works-note">
+      制作会社のプロジェクトチームの一員として担当した案件です。<br>
+      主に<strong>フロントエンド実装（HTML / SCSS / JavaScript）、アニメーション実装、
+        マークアップ設計、共通ファイルの環境構築</strong>などを担当しています。
+    </p>
 
-    <!-- Project B -->
-    <div class="work-card reveal reveal-delay-1">
-      <div class="work-thumb">
-        <span class="work-thumb-icon material-icons-round">web</span>
+    <div class="works-grid">
+
+
+      <!-- Project A -->
+      <div class="work-card featured reveal">
+        <div class="work-thumb">
+          <span class="work-thumb-icon material-icons-round">campaign</span>
+        </div>
+
+        <div class="work-tags">
+          <span class="work-tag">WordPress</span>
+          <span class="work-tag">LP</span>
+          <span class="work-tag">Front-end</span>
+          <span class="work-tag">Mark-up</span>
+          <span class="work-tag">Animation</span>
+        </div>
+
+        <div class="work-title">Project A</div>
+
+        <p class="work-desc">
+          採用ランディングページのフロントエンド実装を担当。
+        </p>
+
+        <a href="https://arte-industry.co.jp/recruit/" target="_blank" class="work-link">
+          Visit Site <span class="material-icons-round">arrow_forward</span>
+        </a>
       </div>
 
-      <div class="work-tags">
-        <span class="work-tag">WordPress</span>
-        <span class="work-tag">Corporate</span>
-        <span class="work-tag">Front-end</span>
-        <span class="work-tag">Mark-up</span>
-        <span class="work-tag">Animation</span>
+
+      <!-- Project B -->
+      <div class="work-card reveal reveal-delay-1">
+        <div class="work-thumb">
+          <span class="work-thumb-icon material-icons-round">web</span>
+        </div>
+
+        <div class="work-tags">
+          <span class="work-tag">WordPress</span>
+          <span class="work-tag">Corporate</span>
+          <span class="work-tag">Front-end</span>
+          <span class="work-tag">Mark-up</span>
+          <span class="work-tag">Animation</span>
+        </div>
+
+        <div class="work-title">Project B</div>
+
+        <p class="work-desc">
+          WordPressコーポレートサイトのフロントエンド実装を担当。
+          TOPページをはじめ、主要下層ページの実装を行いました。
+        </p>
+
+        <a href="https://arte-industry.co.jp/" target="_blank" class="work-link">
+          Visit Site <span class="material-icons-round">arrow_forward</span>
+        </a>
       </div>
 
-      <div class="work-title">Project B</div>
 
-      <p class="work-desc">
-        WordPressコーポレートサイトのフロントエンド実装を担当。
-        TOPページをはじめ、主要下層ページの実装を行いました。
-      </p>
+      <!-- Project C -->
+      <div class="work-card reveal reveal-delay-2">
+        <div class="work-thumb">
+          <span class="work-thumb-icon material-icons-round">web</span>
+        </div>
 
-      <a href="https://arte-industry.co.jp/" target="_blank" class="work-link">
-        Visit Site <span class="material-icons-round">arrow_forward</span>
-      </a>
+        <div class="work-tags">
+          <span class="work-tag">WordPress</span>
+          <span class="work-tag">Custom Post</span>
+          <span class="work-tag">Front-end</span>
+          <span class="work-tag">Mark-up</span>
+          <span class="work-tag">Animation</span>
+        </div>
+
+        <div class="work-title">Project C</div>
+
+        <p class="work-desc">
+          WordPressサイトのフロントエンド実装を担当。
+          TOPページをはじめ、主要下層ページ、カスタム投稿タイプの実装を行いました。
+        </p>
+
+        <a href="https://zero-c.jp/" target="_blank" class="work-link">
+          Visit Site <span class="material-icons-round">arrow_forward</span>
+        </a>
+      </div>
+
+
+      <!-- Project D -->
+      <div class="work-card reveal reveal-delay-3">
+        <div class="work-thumb">
+          <span class="work-thumb-icon material-icons-round">web</span>
+        </div>
+
+        <div class="work-tags">
+          <span class="work-tag">WordPress</span>
+          <span class="work-tag">Corporate</span>
+          <span class="work-tag">Front-end</span>
+          <span class="work-tag">Mark-up</span>
+          <span class="work-tag">Animation</span>
+        </div>
+
+        <div class="work-title">Project D</div>
+
+        <p class="work-desc">
+          WordPressコーポレートサイトのフロントエンド実装を担当。
+          TOPページと主要下層ページの実装を行いました。
+        </p>
+
+        <a href="https://www.alnur.jp/" target="_blank" class="work-link">
+          Visit Site <span class="material-icons-round">arrow_forward</span>
+        </a>
+      </div>
+
+
+      <!-- Project E -->
+      <div class="work-card reveal">
+        <div class="work-thumb">
+          <span class="work-thumb-icon material-icons-round">campaign</span>
+        </div>
+
+        <div class="work-tags">
+          <span class="work-tag">Static</span>
+          <span class="work-tag">LP</span>
+          <span class="work-tag">Front-end</span>
+          <span class="work-tag">Mark-up</span>
+          <span class="work-tag">Animation</span>
+        </div>
+
+        <div class="work-title">Project E</div>
+
+        <p class="work-desc">
+          静的コーディングによる採用ランディングページの実装。
+        </p>
+
+        <a href="https://baguz.jp/recruit_mid/" target="_blank" class="work-link">
+          Visit Site <span class="material-icons-round">arrow_forward</span>
+        </a>
+      </div>
+
+
+      <!-- Project F -->
+      <div class="work-card reveal">
+        <div class="work-thumb">
+          <span class="work-thumb-icon material-icons-round">campaign</span>
+        </div>
+
+        <div class="work-tags">
+          <span class="work-tag">Static</span>
+          <span class="work-tag">LP</span>
+          <span class="work-tag">Front-end</span>
+          <span class="work-tag">Mark-up</span>
+          <span class="work-tag">Animation</span>
+        </div>
+
+        <div class="work-title">Project F</div>
+
+        <p class="work-desc">
+          静的コーディングによる採用ページのフロントエンド実装。
+        </p>
+
+        <a href="https://hairsalonbisq.com/recruit/" target="_blank" class="work-link">
+          Visit Site <span class="material-icons-round">arrow_forward</span>
+        </a>
+      </div>
+
+
+      <!-- Project G -->
+      <div class="work-card reveal">
+        <div class="work-thumb">
+          <span class="work-thumb-icon material-icons-round">shopping_cart</span>
+        </div>
+
+        <div class="work-tags">
+          <span class="work-tag">Shopify</span>
+          <span class="work-tag">EC</span>
+          <span class="work-tag">Liquid</span>
+        </div>
+
+        <div class="work-title">Project G</div>
+
+        <p class="work-desc">
+          Shopifyストアのサイト構築を担当。
+          テーマカスタマイズ、簡単なLiquid編集、サーバー管理などに対応しました。
+        </p>
+
+        <a href="https://senda-seinikuten.com/" target="_blank" class="work-link">
+          Visit Site <span class="material-icons-round">arrow_forward</span>
+        </a>
+      </div>
+
+
     </div>
-
-
-    <!-- Project C -->
-    <div class="work-card reveal reveal-delay-2">
-      <div class="work-thumb">
-        <span class="work-thumb-icon material-icons-round">web</span>
-      </div>
-
-      <div class="work-tags">
-        <span class="work-tag">WordPress</span>
-        <span class="work-tag">Custom Post</span>
-        <span class="work-tag">Front-end</span>
-        <span class="work-tag">Mark-up</span>
-        <span class="work-tag">Animation</span>
-      </div>
-
-      <div class="work-title">Project C</div>
-
-      <p class="work-desc">
-        WordPressサイトのフロントエンド実装を担当。
-        TOPページをはじめ、主要下層ページ、カスタム投稿タイプの実装を行いました。
-      </p>
-
-      <a href="https://zero-c.jp/" target="_blank" class="work-link">
-        Visit Site <span class="material-icons-round">arrow_forward</span>
-      </a>
-    </div>
-
-
-    <!-- Project D -->
-    <div class="work-card reveal reveal-delay-3">
-      <div class="work-thumb">
-        <span class="work-thumb-icon material-icons-round">web</span>
-      </div>
-
-      <div class="work-tags">
-        <span class="work-tag">WordPress</span>
-        <span class="work-tag">Corporate</span>
-        <span class="work-tag">Front-end</span>
-        <span class="work-tag">Mark-up</span>
-        <span class="work-tag">Animation</span>
-      </div>
-
-      <div class="work-title">Project D</div>
-
-      <p class="work-desc">
-        WordPressコーポレートサイトのフロントエンド実装を担当。
-        TOPページと主要下層ページの実装を行いました。
-      </p>
-
-      <a href="https://www.alnur.jp/" target="_blank" class="work-link">
-        Visit Site <span class="material-icons-round">arrow_forward</span>
-      </a>
-    </div>
-
-
-    <!-- Project E -->
-    <div class="work-card reveal">
-      <div class="work-thumb">
-        <span class="work-thumb-icon material-icons-round">campaign</span>
-      </div>
-
-      <div class="work-tags">
-        <span class="work-tag">Static</span>
-        <span class="work-tag">LP</span>
-        <span class="work-tag">Front-end</span>
-        <span class="work-tag">Mark-up</span>
-        <span class="work-tag">Animation</span>
-      </div>
-
-      <div class="work-title">Project E</div>
-
-      <p class="work-desc">
-        静的コーディングによる採用ランディングページの実装。
-      </p>
-
-      <a href="https://baguz.jp/recruit_mid/" target="_blank" class="work-link">
-        Visit Site <span class="material-icons-round">arrow_forward</span>
-      </a>
-    </div>
-
-
-    <!-- Project F -->
-    <div class="work-card reveal">
-      <div class="work-thumb">
-        <span class="work-thumb-icon material-icons-round">campaign</span>
-      </div>
-
-      <div class="work-tags">
-        <span class="work-tag">Static</span>
-        <span class="work-tag">LP</span>
-        <span class="work-tag">Front-end</span>
-        <span class="work-tag">Mark-up</span>
-        <span class="work-tag">Animation</span>
-      </div>
-
-      <div class="work-title">Project F</div>
-
-      <p class="work-desc">
-        静的コーディングによる採用ページのフロントエンド実装。
-      </p>
-
-      <a href="https://hairsalonbisq.com/recruit/" target="_blank" class="work-link">
-        Visit Site <span class="material-icons-round">arrow_forward</span>
-      </a>
-    </div>
-
-
-    <!-- Project G -->
-    <div class="work-card reveal">
-      <div class="work-thumb">
-        <span class="work-thumb-icon material-icons-round">shopping_cart</span>
-      </div>
-
-      <div class="work-tags">
-        <span class="work-tag">Shopify</span>
-        <span class="work-tag">EC</span>
-        <span class="work-tag">Liquid</span>
-      </div>
-
-      <div class="work-title">Project G</div>
-
-      <p class="work-desc">
-        Shopifyストアのサイト構築を担当。
-        テーマカスタマイズ、簡単なLiquid編集、サーバー管理などに対応しました。
-      </p>
-
-      <a href="https://senda-seinikuten.com/" target="_blank" class="work-link">
-        Visit Site <span class="material-icons-round">arrow_forward</span>
-      </a>
-    </div>
-
-
-  </div>
-</section>
+  </section>
 
   <!-- CONTACT -->
   <section id="contact">
@@ -403,4 +421,5 @@
   </footer>
 
 </body>
+
 </html>
