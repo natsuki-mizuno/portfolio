@@ -12,6 +12,7 @@
     --font-disp: 'Bebas Neue', sans-serif;
     --font-body: 'Noto Sans JP', sans-serif;
     --font-mono: 'DM Mono', monospace;
+    --unit: calc(1rem / 16);
 }
 /* ===========================
        RESET & BASE
@@ -23,7 +24,9 @@
 }
 html {
     scroll-behavior: smooth;
+    font-size: 100%;
 }
+
 body {
     background: var(--bg);
     color: var(--text);
@@ -87,9 +90,9 @@ body::before {
     z-index: 1000;
 }
 /* ===========================
-       NAV
+       header
     =========================== */
-nav {
+header {
     position: fixed;
     top: 0;
     left: 0;
@@ -98,34 +101,34 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 24px 48px;
+    padding: 2vh 5%;
     border-bottom: 1px solid transparent;
     transition: border-color 0.3s, background 0.3s;
 }
-nav.scrolled {
+header.scrolled {
     border-color: var(--border);
     background: rgba(10, 10, 10, 0.85);
     backdrop-filter: blur(12px);
 }
-.nav-logo {
+.header-logo {
     font-family: var(--font-disp);
-    font-size: 22px;
+    font-size: calc(22 * var(--unit)); ;
     letter-spacing: 0.12em;
     color: var(--accent);
 }
-.nav-links {
+.header-links {
     display: flex;
     gap: 40px;
 }
-.nav-links a {
-    font-size: 12px;
+.header-links a {
+    font-size: calc(12 * var(--unit)); ;
     letter-spacing: 0.15em;
     text-transform: uppercase;
     color: var(--muted);
     transition: color 0.2s;
     font-family: var(--font-mono);
 }
-.nav-links a:hover {
+.header-links a:hover {
     color: var(--text);
 }
 /* ===========================
@@ -146,7 +149,7 @@ nav.scrolled {
     right: -20px;
     bottom: -40px;
     font-family: var(--font-disp);
-    font-size: 420px;
+    font-size: calc(420 * var(--unit)); ;
     color: var(--border);
     line-height: 1;
     pointer-events: none;
@@ -161,7 +164,7 @@ nav.scrolled {
     align-items: center;
     gap: 8px;
     font-family: var(--font-mono);
-    font-size: 11px;
+    font-size: calc(12 * var(--unit)); ;
     letter-spacing: 0.2em;
     text-transform: uppercase;
     color: var(--accent);
@@ -173,7 +176,7 @@ nav.scrolled {
     animation: fadeUp 0.7s 0.1s forwards;
 }
 .hero-tag .material-icons-round {
-    font-size: 13px;
+    font-size: calc(14 * var(--unit)); ;
 }
 h1 {
     font-family: var(--font-disp);
@@ -189,7 +192,7 @@ h1 span {
 }
 .hero-desc {
     max-width: 420px;
-    font-size: 15px;
+    font-size: calc(15 * var(--unit)); ;
     color: var(--muted);
     margin-bottom: 48px;
     opacity: 0;
@@ -202,7 +205,7 @@ h1 span {
     background: var(--accent);
     color: #0a0a0a;
     font-family: var(--font-mono);
-    font-size: 12px;
+    font-size: calc(13 * var(--unit)); ;
     font-weight: 400;
     letter-spacing: 0.12em;
     text-transform: uppercase;
@@ -217,7 +220,7 @@ h1 span {
     gap: 18px;
 }
 .hero-cta .material-icons-round {
-    font-size: 16px;
+    font-size: calc(16 * var(--unit)); ;
 }
 .hero-right {
     display: flex;
@@ -255,7 +258,7 @@ h1 span {
     line-height: 1;
 }
 .stat-label {
-    font-size: 11px;
+    font-size: calc(12 * var(--unit)); ;
     letter-spacing: 0.15em;
     text-transform: uppercase;
     color: var(--muted);
@@ -263,7 +266,7 @@ h1 span {
     margin-top: 6px;
 }
 .stat-card:nth-child(3) .stat-num {
-    font-size: 40px;
+    font-size: calc(40 * var(--unit)); ;
 }
 /* ===========================
        SECTION COMMON
@@ -279,7 +282,7 @@ section {
 }
 .section-num {
     font-family: var(--font-mono);
-    font-size: 11px;
+    font-size: calc(12 * var(--unit)); ;
     color: var(--accent);
     letter-spacing: 0.15em;
 }
@@ -312,7 +315,7 @@ section {
     align-items: start;
 }
 .about-text p {
-    font-size: 16px;
+    font-size: calc(16 * var(--unit)); 
     color: #aaa;
     margin-bottom: 20px;
 }
@@ -336,12 +339,12 @@ section {
     align-items: center;
 }
 .skill-name {
-    font-size: 13px;
+    font-size: calc(14 * var(--unit)); 
     font-family: var(--font-mono);
     letter-spacing: 0.08em;
 }
 .skill-pct {
-    font-size: 11px;
+    font-size: calc(12 * var(--unit)); 
     color: var(--accent);
     font-family: var(--font-mono);
 }
@@ -366,7 +369,7 @@ section {
     border-top: 1px solid var(--border);
 }
 .works-note {
-    font-size: 16px;
+    font-size: calc(16 * var(--unit)); 
     color: #aaa;
     margin-bottom: 40px;
 }
@@ -414,7 +417,7 @@ section {
     overflow: hidden;
 }
 .work-thumb-icon {
-    font-size: 48px;
+    font-size: calc(48 * var(--unit)); 
     color: #333;
     transition: color 0.3s, transform 0.3s;
 }
@@ -430,7 +433,7 @@ section {
 }
 .work-tag {
     font-family: var(--font-mono);
-    font-size: 10px;
+    font-size: calc(12 * var(--unit)); ;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: var(--accent);
@@ -440,12 +443,12 @@ section {
 }
 .work-title {
     font-family: var(--font-disp);
-    font-size: 28px;
+    font-size: calc(28 * var(--unit)); ;
     letter-spacing: 0.04em;
     margin-bottom: 10px;
 }
 .work-desc {
-    font-size: 13px;
+    font-size: calc(14 * var(--unit)); 
     color: var(--muted);
     line-height: 1.6;
     margin-bottom: 24px;
@@ -455,7 +458,7 @@ section {
     align-items: center;
     gap: 6px;
     font-family: var(--font-mono);
-    font-size: 11px;
+    font-size: calc(12 * var(--unit)); 
     letter-spacing: 0.12em;
     text-transform: uppercase;
     color: var(--muted);
@@ -468,7 +471,7 @@ section {
     gap: 10px;
 }
 .work-link .material-icons-round {
-    font-size: 14px;
+    font-size: calc(14 * var(--unit)); ;
 }
 .work-card.featured {
     grid-column: span 2;
@@ -490,7 +493,7 @@ section {
     right: -30px;
     bottom: -60px;
     font-family: var(--font-disp);
-    font-size: 380px;
+    font-size: calc(380 * var(--unit)); ;
     color: var(--border);
     line-height: 1;
     pointer-events: none;
@@ -501,7 +504,7 @@ section {
     z-index: 1;
 }
 .contact-inner p {
-    font-size: 16px;
+    font-size: calc(16 * var(--unit)); 
     color: var(--muted);
     margin-bottom: 48px;
 }
@@ -518,7 +521,7 @@ section {
     padding: 14px 28px;
     border-radius: 2px;
     font-family: var(--font-mono);
-    font-size: 12px;
+    font-size: calc(12 * var(--unit)); 
     letter-spacing: 0.12em;
     text-transform: uppercase;
     color: var(--muted);
@@ -531,7 +534,7 @@ section {
     background: rgba(200, 241, 53, 0.04);
 }
 .contact-btn .material-icons-round {
-    font-size: 16px;
+    font-size: calc(16 * var(--unit)); 
 }
 /* ===========================
        FOOTER
@@ -545,7 +548,7 @@ footer {
 }
 .footer-copy {
     font-family: var(--font-mono);
-    font-size: 11px;
+    font-size: calc(12 * var(--unit)); 
     color: var(--muted);
     letter-spacing: 0.08em;
 }
@@ -554,7 +557,7 @@ footer {
     align-items: center;
     gap: 6px;
     font-family: var(--font-mono);
-    font-size: 11px;
+    font-size: calc(12 * var(--unit)); 
     letter-spacing: 0.12em;
     text-transform: uppercase;
     color: var(--muted);
@@ -564,7 +567,7 @@ footer {
     color: var(--accent);
 }
 .footer-back .material-icons-round {
-    font-size: 14px;
+    font-size: calc(14 * var(--unit)); ;
 }
 /* ===========================
        ANIMATIONS
@@ -629,7 +632,7 @@ footer {
     nav {
         padding: 20px 24px;
     }
-    .nav-links {
+    .header-links {
         gap: 24px;
     }
     #hero {
@@ -639,6 +642,7 @@ footer {
     }
     #hero::after {
         font-size: 200px;
+
     }
     .hero-right {
         align-items: flex-start;

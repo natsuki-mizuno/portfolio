@@ -14,7 +14,7 @@
     })();
 
     // Sticky nav
-    const nav = document.getElementById('nav');
+    const nav = document.getElementById('header');
     window.addEventListener('scroll', () => {
       nav.classList.toggle('scrolled', window.scrollY > 40);
     });
