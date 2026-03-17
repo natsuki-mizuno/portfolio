@@ -379,25 +379,21 @@ section {
 .work-card {
     background: var(--surface);
     border: 1px solid var(--border);
-    padding: 40px 32px;
     position: relative;
     overflow: hidden;
     transition: border-color 0.3s;
     cursor: pointer;
 }
-.work-card::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(135deg, rgba(200, 241, 53, 0.04), transparent);
-    opacity: 0;
-    transition: opacity 0.3s;
-}
+
 .work-card:hover {
     border-color: var(--accent);
 }
 .work-card:hover::before {
     opacity: 1;
+}
+.work-link {
+  display: block;
+    padding: 40px 32px;
 }
 .work-thumb {
     width: 100%;
@@ -447,7 +443,7 @@ section {
     line-height: 1.6;
     margin-bottom: 24px;
 }
-.work-link {
+.work-btn {
     display: inline-flex;
     align-items: center;
     gap: 6px;
@@ -460,11 +456,11 @@ section {
     position: relative;
     z-index: 10;
 }
-.work-link:hover {
+.work-link:hover .work-btn {
     color: var(--accent);
     gap: 10px;
 }
-.work-link .material-icons-round {
+.work-btn .material-icons-round {
     font-size: calc(14 * var(--unit)); ;
 }
 .work-card.featured {
