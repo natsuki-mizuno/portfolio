@@ -93,7 +93,7 @@ body::before {
        header
     =========================== */
 header {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
@@ -103,12 +103,6 @@ header {
     justify-content: space-between;
     padding: 2vh 5%;
     border-bottom: 1px solid transparent;
-    transition: border-color 0.3s, background 0.3s;
-}
-header.scrolled {
-    border-color: var(--border);
-    background: rgba(10, 10, 10, 0.85);
-    backdrop-filter: blur(12px);
 }
 .header-logo {
     font-family: var(--font-disp);
