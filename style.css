@@ -385,15 +385,12 @@ section {
     cursor: pointer;
 }
 
-.work-card:hover {
-    border-color: var(--accent);
-}
-.work-card:hover::before {
-    opacity: 1;
-}
 .work-link {
   display: block;
     padding: 40px 32px;
+}
+.work-link:hover {
+    border-color: var(--accent);
 }
 .work-thumb {
     width: 100%;
@@ -411,7 +408,7 @@ section {
     color: #333;
     transition: color 0.3s, transform 0.3s;
 }
-.work-card:hover .work-thumb-icon {
+.work-link:hover .work-thumb-icon {
     color: var(--accent);
     transform: scale(1.1);
 }
@@ -466,7 +463,7 @@ section {
 .work-card.featured {
     grid-column: span 2;
 }
-.work-card.featured .work-thumb {
+.work-cardfeatured .work-thumb {
     height: 260px;
 }
 /* ===========================
